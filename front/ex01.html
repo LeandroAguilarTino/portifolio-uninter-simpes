@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Pessoal de Leandro Martin Aguilar</title>
+    <title>Leandro Aguilar | Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Leandro Martin Aguilar</h1>
+        <div class="container">
+            <h1>Leandro Martin Aguilar</h1>
+            <p class="subtitle">Estudante de Engenharia de Software</p>
+        </div>
     </header>
 
-    <main>
-        <p>Leandro, idade 37, moro em Canoas, RS. Nasci na Argentina, província de Rosario de Santa.</p>
+    <main class="container">
+        <section class="profile-card">
+            <div class="bio">
+                <h2>Sobre Mim</h2>
+                <p>Tenho 37 anos e resido em <strong>Canoas, RS</strong>. Natural de Rosario de Santa Fe, Argentina, busco unir minha experiência de vida com a tecnologia.</p>
+                <ul class="interests">
+                    <li><span class="icon">🏋️</span> Treinar</li>
+                    <li><span class="icon">☕</span> Explorar Cafeterias</li>
+                    <li><span class="icon">✈️</span> Conhecer Novos Lugares</li>
+                </ul>
+            </div>
+            <div class="featured-img">
+                <img src="img/pexels-emrecan-2079438.jpg" alt="Cafeteria aconchegante">
+            </div>
+        </section>
 
-        <ul>
-            <li>Treinar</li>
-            <li>Conhecer cafeterias</li>
-            <li>Conhecer novos lugares</li>
-        </ul>
+        <section class="travels">
+            <h2>Destinos Favoritos</h2>
+            <div class="grid-travels">
+                <div class="travel-card">
+                    <img src="img/istockphoto-576913134-1024x1024.jpg" alt="Espanha">
+                    <div class="overlay"><span>Espanha</span></div>
+                </div>
+                <div class="travel-card">
+                    <img src="img/pexels-asadphoto-1450360.jpg" alt="Ilhas Maldivas">
+                    <div class="overlay"><span>Ilhas Maldivas</span></div>
+                </div>
+                <div class="travel-card">
+                    <img src="img/pexels-jplenio-1423580.jpg" alt="China">
+                    <div class="overlay"><span>China</span></div>
+                </div>
+            </div>
+        </section>
 
-        <img src="img/pexels-emrecan-2079438.jpg" alt="Cafeteria em um lugar bonito">
+        <section class="actions">
+            <div class="interactive-area">
+                <button id="btnMessage" class="main-btn">Dizer Olá!</button>
+                <p id="message"></p>
+            </div>
+            <a href="https://www.tecmundo.com.br" target="_blank" class="news-link">Acompanhar Notícias Tech</a>
+        </section>
+    </main>
 
-        <table>
-            <tr>
-                <td>Espanha</td>
-                <td><img src="img/istockphoto-576913134-1024x1024.jpg" alt="Espanha"></td>
-            </tr>
-            <tr>
-                <td>Ilhas Maldivas</td>
-                <td><img src="img/pexels-asadphoto-1450360.jpg" alt="Ilhas Maldivas"></td>
-            </tr>
-            <tr>
-                <td>China</td>
-                <td><img src="img/pexels-jplenio-1423580.jpg" alt="China"></td>
-            </tr>
-        </table>
+    <footer>
+        <p>&copy; 2026 Leandro Aguilar - Uninter</p>
+    </footer>
 
-       <!-- Link separado -->
-<a href="http://">https://www.tecmundo.com.br</a>
-
-<!-- Botão separado -->
-<div style="text-align: center; margin-top: 20px;">
-    <button onclick="showMessage()">Clique para ver uma mensagem!</button>
-    <p id="message"></p>
-</div>
-
-<script>
-    function showMessage() {
-        document.getElementById('message').innerText = 'Bem-vindo à minha página pessoal!';
-    }
-</script>
-
+    <script src="scriprt.js"></script>
 </body>
 </html>
